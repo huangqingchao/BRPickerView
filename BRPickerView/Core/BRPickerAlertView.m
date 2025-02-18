@@ -164,6 +164,7 @@
     if (!_cancelBtn) {
         _cancelBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _cancelBtn.frame = self.pickerStyle.cancelBtnFrame;
+        _cancelBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         _cancelBtn.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin;
         _cancelBtn.backgroundColor = self.pickerStyle.cancelColor;;
         _cancelBtn.titleLabel.font = self.pickerStyle.cancelTextFont;
@@ -194,6 +195,7 @@
     if (!_doneBtn) {
         _doneBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         _doneBtn.frame = self.pickerStyle.doneBtnFrame;
+        _doneBtn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentRight;
         _doneBtn.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleLeftMargin;
         _doneBtn.backgroundColor = self.pickerStyle.doneColor;
         if (self.pickerStyle.doneBtnImage) {
